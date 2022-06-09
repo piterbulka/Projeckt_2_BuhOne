@@ -1,0 +1,117 @@
+@media only screen and (max-width: 1085px) {
+    .container{
+        max-width: 1065px;
+    }
+    .grey, .title_adaptive{
+        text-align: center;
+    }
+     .card__office{
+         justify-content: space-around;
+     }
+     .company_info{
+         text-align: right;
+     }
+     .company_case{
+         justify-content: center;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .container{
+        max-width: 1000px;
+    }
+   .grey, .title_adaptive{
+       text-align: center;
+   }
+    .card__office{
+        justify-content: space-around;
+    }
+    .company_product-wrap {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company_info{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+   
+    .clients-wrap{
+        justify-content: space-around;
+
+    }
+    .footer_contact_form_wrap{
+    text-align: -webkit-center;
+    display: block;
+    }
+    .form__wrap{
+        margin-top: 130px;
+    }
+}
+
+@media only screen and (max-width: 820px) {
+    .container{
+       max-width: 800px;
+    }
+    .section{
+        padding: 50px 0;
+    }
+    .company_product-wrap {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .company_info{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+   
+   .header__contacts, .header__nav{
+       display: none;
+       max-height: 0;
+       overflow: hidden;
+       position: absolute;
+       background-color: var(--white-color);
+       text-align: center;
+       right: 0;
+       left: 0;
+       margin-top: 20px;
+   }
+   #checkbox_toggle:checked ~ .header__nav{
+    display: block;
+    max-height: max-content;
+    transition: all .5s;
+    }
+  
+    .burger{
+        display:block;
+        padding: 25px 0;
+    }
+    .header__nav-item{
+        color: var(--black-color); 
+        display: block;
+        padding: 15px 0;
+        z-index: 4;
+        transition: all .5s;
+    }
+    .header__nav-item:hover{
+        background-color: var(--background-color);
+    }
+
+    #checkbox_toggle:checked ~ .burger .burger-line {
+        background-color: transparent;
+    }
+    #checkbox_toggle:checked ~ .burger .burger-line::before{
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    #checkbox_toggle:checked ~ .burger .burger-line::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+}   
+
+
